@@ -37,7 +37,7 @@ public class TracIssueUpdater {
 
 	private static Logger log = LoggerFactory.getLogger(TracIssueUpdater.class);
 
-	Pattern issuePattern = Pattern.compile("[#](\\d+)");
+        Pattern issuePattern = Pattern.compile("(?i)(?:trac|ticket)\\s*[:#.]?\\s*(\\d+)");
 
 	AbstractBuild<?, ?> build;
 	BuildListener listener;

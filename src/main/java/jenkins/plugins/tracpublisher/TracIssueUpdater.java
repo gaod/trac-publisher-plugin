@@ -130,7 +130,7 @@ public class TracIssueUpdater {
 	private void updateCorrectedIssue(Integer issue)
 			throws MalformedURLException {
 		try {
-			buildLog.format("Updating corrected issue %d with %s\n:", issue,
+			buildLog.format("Updating corrected issue %d with %s\n", issue,
 					build.getDisplayName());
 			updateIssue(issue, true);
 		} catch (XmlRpcException e) {
@@ -148,7 +148,7 @@ public class TracIssueUpdater {
 	private void updateSuccessfulIssue(Integer issue)
 			throws MalformedURLException {
 		try {
-			buildLog.format("Updating successful issue %d with %s\n:", issue,
+			buildLog.format("Updating successful issue %d with %s\n", issue,
 					build.getDisplayName());
 			updateIssue(issue, false);
 		} catch (XmlRpcException e) {

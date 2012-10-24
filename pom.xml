@@ -54,5 +54,8 @@
 		<developerConnection>scm:git:ssh://git@github.com/jenkinsci/trac-publisher-plugin.git</developerConnection>
 		<url>https://github.com/jenkinsci/trac-publisher-plugin</url>
 	</scm>
-
+        <properties>
+                <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        </properties>
 </project>
